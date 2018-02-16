@@ -122,7 +122,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(mines_le_vinh
-#   src/${PROJECT_NAME}/mines_Le_Vinh.cpp
+#   src/${PROJECT_NAME}/mines_le_vinh.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -131,7 +131,7 @@ include_directories(
 # add_dependencies(mines_le_vinh ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(robot_mines_node src/mines_Le_Vinh.cpp)
+add_executable(robot_mines_node src/mines_le_vinh.cpp)
 
 
 ## Specify libraries to link a library or executable target against
