@@ -139,7 +139,7 @@ target_link_libraries(robot_mines_node ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(robot_cleaner_node beginner_tutorials_gen_cpp)
+add_dependencies(robot_mines_node beginner_tutorials_gen_cpp)
 #############
 ## Install ##
 #############
