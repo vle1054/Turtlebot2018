@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(turtlesim_cleaner)
+project(mines_le_vinh)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -7,7 +7,7 @@ project(turtlesim_cleaner)
 find_package(catkin REQUIRED)
 
 ## System dependencies are found with CMake's conventions
-find_package(catkin REQUIRED COMPONENTS 
+find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
@@ -103,7 +103,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES turtlesim_cleaner
+#  LIBRARIES turtlesim_mines
 CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs message_runtime
 #  DEPENDS system_lib
 )
@@ -121,21 +121,21 @@ include_directories(
 # include_directories(include)
 
 ## Declare a C++ library
-# add_library(turtlesim_cleaner
-#   src/${PROJECT_NAME}/turtlesim_cleaner.cpp
+# add_library(turtlesim_mines
+#   src/${PROJECT_NAME}/mines_Le_Vinh.cpp
 # )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
-# add_dependencies(turtlesim_cleaner ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(turtlesim_mines ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(robot_cleaner_node src/robot_cleaner.cpp)
+add_executable(robot_mines_node src/mines_Le_Vinh.cpp)
 
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(robot_cleaner_node ${catkin_LIBRARIES})
+target_link_libraries(robot_mines_node ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -155,7 +155,7 @@ add_dependencies(robot_cleaner_node beginner_tutorials_gen_cpp)
 # )
 
 ## Mark executables and/or libraries for installation
-# install(TARGETS turtlesim_cleaner turtlesim_cleaner_node
+# install(TARGETS turtlesim_mines turtlesim_mines_node
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
@@ -180,7 +180,7 @@ add_dependencies(robot_cleaner_node beginner_tutorials_gen_cpp)
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_turtlesim_cleaner.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_turtlesim_mines.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
